@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ForgotPassword = () => {
   return (
-    <div className="flex h-screen justify-center items-center bg-black">
+    <div className="flex min-h-screen justify-center items-center bg-black">
       <div className="flex justify-center flex-col p-12 bg-[#292C2D] w-[758px] text-center rounded-xl">
         <h3 className="text-white text-3xl font-semibold">Forgot Password?</h3>
         <p className="text-white mt-4">
