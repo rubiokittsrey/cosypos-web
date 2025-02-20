@@ -1,10 +1,8 @@
-"use client";
 import React from "react";
-import DashboardLogo from "../../public/dashboard.svg";
 
 const SideNav = () => {
   return (
-    <div className="w-[171px] bg-[#292C2D] min-h-screen flex justify-center">
+    <div className="w-[171px] bg-[#292C2D] min-h-screen flex justify-center rounded-r-3xl">
       <div className="h-full min-h-screen flex flex-col justify-between">
         <div>
           <div className="my-8 ">
@@ -75,13 +73,13 @@ const SideNav = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="size-6 text-[#F5B6D9]"
           >
             <path
               strokeLinecap="round"
-              stroke-linejoin="round"
+              strokeWidth="round"
               d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
             />
           </svg>
