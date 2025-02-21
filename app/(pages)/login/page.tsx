@@ -17,6 +17,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Eye, EyeOff } from "lucide-react";
+import Link from "next/link";
 
 const formSchema = z.object({
   username: z.string().min(1, "Username is required"),
@@ -111,17 +112,21 @@ export default function Home() {
                     Remember me
                   </Label>
                 </div>
-                <p className="text-[#FEB7D8] cursor-pointer underline">
-                  Forgot Password?
-                </p>
+                <Link href="/forgot-password">
+                  <p className="text-[#FEB7D8] cursor-pointer underline">
+                    Forgot Password?
+                  </p>
+                </Link>
               </div>
               <div className="justify-center items-center flex">
-                <Button
-                  type="submit"
-                  className="w-1/3 py-7 bg-white text-[#333333]"
-                >
-                  Login
-                </Button>
+                <Link href="/dashboard">
+                  <Button
+                    type="submit"
+                    className="w-1/3 py-7 bg-white text-[#333333]"
+                  >
+                    Login
+                  </Button>
+                </Link>
               </div>
             </form>
           </Form>
